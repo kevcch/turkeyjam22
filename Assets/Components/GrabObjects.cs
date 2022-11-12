@@ -6,7 +6,6 @@ public class GrabObjects : MonoBehaviour
 {
     private Transform playerParent;
     private Transform player;
-    private bool grabbed = false;
     private Vector3 offset;
     private GrabbedManager grabManager;
 

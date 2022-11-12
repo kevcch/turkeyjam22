@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7817279343194712446}
   - component: {fileID: 1778983117695057790}
   - component: {fileID: 6855848663866788298}
+  - component: {fileID: 1176457933}
   m_Layer: 0
   m_Name: FlourBag
   m_TagString: Player
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 15
-  moveForce: 0.06
+  moveForce: 0.006
   isGrounded: 0
 --- !u!54 &1778983117695057790
 Rigidbody:
@@ -131,6 +132,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940696}
+--- !u!114 &1176457933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4619707408022982152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1703e93446ee342d6ab86ea06a2f652f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbed: 0
 --- !u!1 &6895388965849387684
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 6895388965849387684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.30000013, y: 0.3, z: 0.30000013}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5333004241942916297}
