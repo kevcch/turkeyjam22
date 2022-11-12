@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveForce = 2.0f;
     public bool isColliding;
     public bool isGrounded;
+    private bool canJump = true;
 
     public float maxSpeedHorizontal = 25f;
     public float maxSpeedVertical = 25f;
@@ -21,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
         isColliding = false;
         isGrounded = false;
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void reenableJump()
+    {
+        canJump = true;
     }
     void OnCollisionStay()
     {
@@ -57,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isGrounded && isColliding) {
             rb.AddForce(new Vector3(0, 1, 0) * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+            canJump = false;
+            Invoke("reenableJump", 1);
         }
 
         Vector3 newVel = rb.velocity;
