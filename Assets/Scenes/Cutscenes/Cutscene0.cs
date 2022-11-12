@@ -4,47 +4,18 @@ using UnityEngine;
 
 public class Cutscene0 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    CutsceneManager cm;
 
-
-    public int currentIndex = 0;
-
-    private string[] sequence = {
-        "Dialogue0",
-        "Dialogue1",
-        "*tryMe"
-    };
-
-
-    void Start()
+    private void Start()
     {
-        GameObject.Find(sequence[0]).GetComponent<Dialogue>().StartDialogue(Dialogue.DialogueType.INTRO, gameObject);
+        cm = gameObject.GetComponent<CutsceneManager>();
+        cm.StartDialog();
     }
 
-    public void HandleEndDialogue()
-    {
-        if (currentIndex < sequence.Length - 1)
-        {
-            currentIndex++;
-            if (sequence[currentIndex].StartsWith("*"))
-            {
-                Invoke(sequence[currentIndex].Substring(1),0f);
-            }
-            else
-            {
-                GameObject.Find(sequence[currentIndex]).GetComponent<Dialogue>().StartDialogue(Dialogue.DialogueType.INTRO, gameObject);
-            }
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void tryMe()
+    IEnumerator tryMe()
     {
         Debug.Log("YESSS I WORKSKSKDF:DSLKFLDSK:LDSFK:LDSK:LDsf:Ldsk:LFK");
+        yield return new WaitForSeconds(1f);
+        cm.StartDialog();
     }
 }

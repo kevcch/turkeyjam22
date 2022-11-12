@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     //Holds the lines currently used
-    private Line[] lines;
+    public Line[] lines;
     
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -19,11 +19,6 @@ public class Dialogue : MonoBehaviour
 
     public Image portrait;
 
-    public enum DialogueType {INTRO, ENDING};
-
-    //Holds lines for intro and ending
-    public Line[] intro;
-    public Line[] ending;
 
     //Check if the dialogue manager is active
     public bool dialogueActive;
@@ -46,7 +41,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canContinue)
+        if (Input.GetMouseButtonDown(0) && canContinue && dialogueActive)
         {
             if (lastLine)
             {
@@ -60,13 +55,8 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public void StartDialogue(DialogueType dialogueType, GameObject myCallbackObject=null)
+    public void StartDialogue(GameObject myCallbackObject=null, string myCallbackFunction=null)
     {
-        if(dialogueType == DialogueType.INTRO){
-            lines = intro;
-        }else if(dialogueType == DialogueType.ENDING){
-            lines = ending;
-        }
         canContinue = true;
 
         callbackObject = myCallbackObject;
@@ -86,8 +76,9 @@ public class Dialogue : MonoBehaviour
         dialogueActive = false;
         lineCounter = 0;
         lastLine = false;
+        //gameObject.SetActive(false);
         if(callbackObject){
-            callbackObject.BroadcastMessage("HandleEndDialogue");
+            callbackObject.BroadcastMessage("NextDialog");
         }
     }
 

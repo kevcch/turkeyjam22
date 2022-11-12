@@ -121,19 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9daf9bf9c85e94b81a5444907f0536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lines: []
   dialogueBox: {fileID: 8665156420670680653}
   dialogueText: {fileID: 8665156421236184976}
   nameBox: {fileID: 8665156420830875936}
   nameText: {fileID: 8665156420118941554}
   portrait: {fileID: 8665156419678105785}
-  intro:
-  - text: bruhbruh
-    portrait: {fileID: 21300000, guid: 391e6c42c05166a4b98df01fff73a516, type: 3}
-    name: asdfasdf
-  - text: sdfsdf
-    portrait: {fileID: 21300000, guid: 391e6c42c05166a4b98df01fff73a516, type: 3}
-    name: fdfd
-  ending: []
   dialogueActive: 0
   lineCounter: 0
   lastLine: 0

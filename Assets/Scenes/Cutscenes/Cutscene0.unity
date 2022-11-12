@@ -224,6 +224,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2056583896}
     m_Modifications:
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].name
+      value: sdfsdf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: sdf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: b0376c3d1b1f5c74096f93e430e097e2, type: 3}
     - target: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -272,11 +288,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue1
       objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912742, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
 --- !u!4 &1416144297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+  m_PrefabInstance: {fileID: 1416144296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1416144298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8665156419888912742, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
   m_PrefabInstance: {fileID: 1416144296}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1720233184
@@ -370,6 +395,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2056583896}
     m_Modifications:
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].name
+      value: 234234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: 234234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 9c0d6ec706e01ce448aea81584af092b, type: 3}
     - target: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -425,6 +466,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
   m_PrefabInstance: {fileID: 2052090643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2052090645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8665156419888912742, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+  m_PrefabInstance: {fileID: 2052090643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056583895
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2056583896}
+  - component: {fileID: 2056583899}
   - component: {fileID: 2056583897}
   - component: {fileID: 2056583898}
   m_Layer: 0
@@ -472,7 +519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7574ea7a7279ad84f88214f5e48a3d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: 0
 --- !u!82 &2056583898
 AudioSource:
   m_ObjectHideFlags: 0
@@ -569,3 +615,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2056583899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056583895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632fb712438d1b44ca0e0f9d0da1d8e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIndex: 0
+  sequence:
+  - dialog: {fileID: 2052090645}
+    specialFunctionCall: tryMe
+  - dialog: {fileID: 1416144298}
+    specialFunctionCall: 
