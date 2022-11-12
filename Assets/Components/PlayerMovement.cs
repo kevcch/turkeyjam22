@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.D) /*&& isGrounded && isColliding*/) { 
             rb.AddForce(new Vector3(0, 0, -moveForce), ForceMode.Impulse);
         }
-        if (Input.GetKey(KeyCode.Space) && isGrounded && isColliding) {
+        if (Input.GetKey(KeyCode.Space) && isGrounded && isColliding && canJump) {
             rb.AddForce(new Vector3(0, 1, 0) * jumpForce, ForceMode.Impulse);
             isGrounded = false;
             canJump = false;
