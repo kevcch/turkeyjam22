@@ -12,14 +12,12 @@ public class Dialogue : MonoBehaviour
     public Text dialogueText;
 
     //Array of chars for text
-    public char[] sentenceArray;
+    private char[] sentenceArray;
 
     public GameObject nameBox;
     public Text nameText;
 
     public Image portrait;
-    public Sprite takoyakiPortrait;
-    public Sprite surferPortrait;
 
     public enum DialogueType {INTRO, ENDING};
 
