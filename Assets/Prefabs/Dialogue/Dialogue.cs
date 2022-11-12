@@ -55,7 +55,7 @@ public class Dialogue : MonoBehaviour
             else
             {
                 StartCoroutine(NextSentence());
-                Debug.Log("Continue Dialogue");
+                //Debug.Log("Continue Dialogue");
             }
         }
     }
@@ -96,7 +96,7 @@ public class Dialogue : MonoBehaviour
         canContinue = false;
         //dialogueText.text = lines[lineCounter].text;
         dialogueText.text = "";
-        nameText.text = lines[lineCounter].name;
+        //nameText.text = lines[lineCounter].name;
         portrait.sprite = lines[lineCounter].portrait;
 
         sentenceArray = lines[lineCounter].text.ToCharArray();
