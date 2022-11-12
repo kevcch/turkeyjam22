@@ -70,5 +70,7 @@ public class PlayerMovement : MonoBehaviour
             newVel.z = rb.velocity.z/horizontalVelMag * maxSpeedHorizontal;
         }
 
+        rb.velocity = newVel;
+
     }
 }
