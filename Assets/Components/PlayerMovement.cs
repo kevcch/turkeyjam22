@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -9,14 +10,24 @@ public class PlayerMovement : MonoBehaviour
     public float moveForce = 2.0f;
     public bool isGrounded;
 
-    void OnCollisionStay()
+    private void Start()
     {
-        isGrounded = true;
+        isGrounded = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        RaycastHit hit;
+        float distance = 10f;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, distance))
+        {
+            Debug.Log(transform.position.y - hit.point.y);
+            if (transform.position.y-hit.point.y < 0.5)
+                isGrounded = true;
+        }
+
+
         if (Input.GetKey(KeyCode.W) && isGrounded) {
             GetComponent<Rigidbody>().AddForce(new Vector3(moveForce, 0, 0), ForceMode.Impulse);
         }
