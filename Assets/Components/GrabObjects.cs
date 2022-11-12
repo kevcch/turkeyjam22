@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GrabObjects : MonoBehaviour
 {
-    private Transform playerParent;
+    //private Transform playerParent;
     private Transform player;
     private Vector3 offset;
     private GrabbedManager grabManager;
 
     void Start()
     {
-        playerParent = GameObject.FindWithTag("Player").transform;
-        player = playerParent.transform.GetChild(0);
+        player = GameObject.FindWithTag("Player").transform;
+        //player = playerParent.transform.GetChild(0);
         grabManager = player.GetComponent<GrabbedManager>();
         
     }
