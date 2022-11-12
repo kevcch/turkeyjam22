@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cutscene0 : MonoBehaviour
 {
@@ -8,16 +9,25 @@ public class Cutscene0 : MonoBehaviour
 
     private void Start()
     {
+        VFXSingleton.instance.fadeToAlpha();
         cm = gameObject.GetComponent<CutsceneManager>();
         cm.StartDialog();
+
     }
 
     IEnumerator tryMe()
     {
         Debug.Log("YESSS I WORKSKSKDF:DSLKFLDSK:LDSFK:LDSK:LDsf:Ldsk:LFK");
-        VFXSingleton.instance.fadeToAlpha();
+        //VFXSingleton.instance.fadeToAlpha();
 
         yield return new WaitForSeconds(1f);
         cm.StartDialog();
+    }
+
+    IEnumerator EndScene()
+    {
+        VFXSingleton.instance.fadeToBlack();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Cutscene1");
     }
 }

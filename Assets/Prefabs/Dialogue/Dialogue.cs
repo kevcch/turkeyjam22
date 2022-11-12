@@ -85,9 +85,9 @@ public class Dialogue : MonoBehaviour
     IEnumerator NextSentence()
     {
         canContinue = false;
-        //dialogueText.text = lines[lineCounter].text;
+        dialogueText.text = lines[lineCounter].text;
         dialogueText.text = "";
-        //nameText.text = lines[lineCounter].name;
+        nameText.text = lines[lineCounter].name;
         portrait.sprite = lines[lineCounter].portrait;
 
         sentenceArray = lines[lineCounter].text.ToCharArray();
