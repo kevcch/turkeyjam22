@@ -8,7 +8,7 @@ public class CutScene1 : MonoBehaviour
     CutsceneManager cm;
     public Cinemachine.CinemachineVirtualCamera vcam;
     public Transform yeast_trans;
-    //public Transform mixing_bowl_trans;
+    public Transform mixing_bowl_trans;
 
     private void Start()
     {
@@ -25,14 +25,14 @@ public class CutScene1 : MonoBehaviour
 
     }
 
-    /*
+    
     IEnumerator panToMixingBowl()
     {
         Debug.Log("PAN TO MIX");
         vcam.LookAt = mixing_bowl_trans;
         yield return new WaitForSeconds(1.5f);
         StartCoroutine("EndScene");
-    }*/
+    }
 
 
     IEnumerator EndScene()
