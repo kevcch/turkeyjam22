@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
+        //Debug.Log(other.tag);
         if (other.tag == "FlourPointRestore")
             EnteredTrigger = true;
     }
@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             //}
         }
-        Debug.Log(isGrounded);
+        //Debug.Log(isGrounded);
         if (Input.GetKeyDown(KeyCode.T)) {
             fourty_five_mode = !fourty_five_mode;
         }
