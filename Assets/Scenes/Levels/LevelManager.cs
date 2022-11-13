@@ -45,6 +45,10 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void StartRestartCoroutine() {
+        StartCoroutine(RestartScene());
+    }
+
     public IEnumerator RestartScene()
     {
         VFXSingleton.instance.fadeToBlack();

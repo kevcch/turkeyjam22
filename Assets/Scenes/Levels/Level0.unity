@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1838687, g: 0.22901696, b: 0.3031103, a: 1}
+  m_IndirectSpecularColor: {r: 0.18386841, g: 0.22901651, b: 0.30311018, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1467,7 +1467,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.15622985, y: 0.37717226, z: -0.06471253, w: 0.9105744}
+  m_LocalRotation: {x: 0.15622987, y: 0.37717226, z: -0.06471254, w: 0.9105744}
   m_LocalPosition: {x: -12.12, y: 7.85, z: -11.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2582,7 +2582,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368297053}
-  m_LocalRotation: {x: 0.15622985, y: 0.37717226, z: -0.06471253, w: 0.9105744}
+  m_LocalRotation: {x: 0.15622987, y: 0.37717226, z: -0.06471254, w: 0.9105744}
   m_LocalPosition: {x: -12.12, y: 7.85, z: -11.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2598,6 +2598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 614667615459458549, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_Text
+      value: 'Objective: Bring the milk to the mixing bowl'
+      objectReference: {fileID: 0}
     - target: {fileID: 2800331518771788119, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2686,6 +2690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlourBar
       objectReference: {fileID: 0}
+    - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1917258191}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
 --- !u!1 &1415483079 stripped
@@ -3769,6 +3777,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+--- !u!114 &1917258191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3985617351875059026, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+  m_PrefabInstance: {fileID: 1917258190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a05f65f00161c747bf1cc85dd08b230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1939207139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7398634332063382548, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
