@@ -33,7 +33,7 @@ public class VFXSingleton : MonoBehaviour
 
     public void flickerToBlack()
     {
-        transform.Find("Panel").GetComponent<Image>().DOColor(Color.black, .6f).SetEase(Ease.InQuad);
+        transform.Find("Panel").GetComponent<Image>().DOColor(Color.black, .1f).SetEase(Ease.InOutBounce).SetLoops(7, LoopType.Yoyo);
     }
     public void fadeToAlpha()
     {

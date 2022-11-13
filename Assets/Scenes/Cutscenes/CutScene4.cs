@@ -9,26 +9,33 @@ public class CutScene4 : MonoBehaviour
     public Cinemachine.CinemachineVirtualCamera vcam;
     public GameObject alive_loaf;
     public GameObject directional_light;
+    public GameObject post_death_objects;
     public GameObject dead_loaf;
 
     private void Start()
     {
         VFXSingleton.instance.fadeToAlpha();
+       
         cm = gameObject.GetComponent<CutsceneManager>();
         cm.StartDialog();
-
     }
 
     IEnumerator deadLoafCutscene()
     {
-        yield return new WaitForSeconds(0.1f);
-        //AUDIO THUD
+        VFXSingleton.instance.flickerToBlack();
+        yield return new WaitForSeconds(2f);
+        vcam.LookAt = dead_loaf.transform;
 
+        //AUDIO THUD
+        //FindObjectOfType<AudioManager>().Play("THUD");
+        yield return new WaitForSeconds(0.5f);
+        //AUDIO SCREAM
+        //FindObjectOfType<AudioManager>().Play("SCREAM");
         directional_light.SetActive(false);
         alive_loaf.SetActive(false);
-        dead_loaf.SetActive(true);
-        vcam.LookAt = dead_loaf.transform;
-        yield return new WaitForSeconds(1.5f);
+        post_death_objects.SetActive(true);
+        VFXSingleton.instance.fadeToAlpha();
+        yield return new WaitForSeconds(1f);
         cm.StartDialog();
 
     }
