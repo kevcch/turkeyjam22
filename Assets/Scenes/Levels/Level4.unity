@@ -2446,6 +2446,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 614667615459458549, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_Text
+      value: 'Objective: grab the knife block and escape...
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 2800331518771788119, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
