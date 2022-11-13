@@ -45,13 +45,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: music
+  - name: happyMusic
     group: music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: c84da48c44812427aa49befe7aba56c9, type: 3}
     volume: 0.266
     pitch: 1
     loop: 1
+  - name: sadMusic
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: e51872ea285c34d629155f84615fce42, type: 3}
+    volume: 0.266
+    pitch: 1
+    loop: 0
+  - name: deathWind
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: cb7546a570a03413dbd4193bb3f88c0c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
   - name: bagMvmt1
     group: movement
     source: {fileID: 0}
@@ -105,6 +119,13 @@ MonoBehaviour:
     group: 
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: fcf7c687415d646e390fd9667d7647c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: death
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 00d6e749dde6c45fb8982cd70e5bf4f6, type: 3}
     volume: 1
     pitch: 1
     loop: 0
