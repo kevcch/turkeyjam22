@@ -564,6 +564,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521908410}
   m_Mesh: {fileID: -6692290496178104961, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
+--- !u!1 &582480979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2239480891910747210, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
+  m_PrefabInstance: {fileID: 1173036196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &582480984
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582480979}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &624164688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647149386331078034, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.695
+      value: 2.011
       objectReference: {fileID: 0}
     - target: {fileID: 1647149386331078034, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1252,6 +1273,10 @@ PrefabInstance:
     - target: {fileID: 2239480891910747210, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
       propertyPath: m_Name
       value: FlourPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239480891910747210, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
+      propertyPath: m_TagString
+      value: FlourPointRestore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7094d306ceb4da8ad068e663753cf9, type: 3}
@@ -1998,6 +2023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 228924404498466150, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989880957625972624, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
       value: 
@@ -2154,6 +2183,10 @@ PrefabInstance:
     - target: {fileID: 2800331518771788123, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_Name
       value: FlourBarCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800331518771788123, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_TagString
+      value: FlourPointRestore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
