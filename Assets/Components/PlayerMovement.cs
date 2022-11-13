@@ -17,11 +17,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGrounded == value)
                 return;
+            isGrounded = value;
             if (OnIsGroundedChange != null)
                 OnIsGroundedChange(isGrounded);
         }
     }
-    private bool isGrounded;
+    private bool isGrounded = true;
     public delegate void OnIsGroundedChangeDelegate(bool isGrounded);
     public event OnIsGroundedChangeDelegate OnIsGroundedChange;
     private bool canJump = true;
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private float minStepRate = 0.3f;
     private float maxStepRate = 3f;
     private float minMovementSoundSpeed = .5f;
+    private float landVelocity;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -59,7 +61,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            FindObjectOfType<AudioManager>().PlayPitchRandom("playerLand");
+            FindObjectOfType<AudioManager>().PlayWithNewVolume("playerLand", landVelocity);
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().PlayPitchRandom("playerJump", .7f, .8f);
         }
     }
 
@@ -94,7 +100,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.DrawRay(transform.position, Vector3.down, Color.green, 2);
             //Debug.Log(transform.position.y - hit.point.y);
             //if (transform.position.y-hit.point.y < 0.3) {
-            isGrounded = true;
+            landVelocity = Mathf.Clamp(Mathf.Abs(rb.velocity.y * .2f), .5f, 1f);
+            IsGrounded = true;
             //}
         }
         //Debug.Log(isGrounded);
@@ -115,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && isGrounded && isColliding && canJump) {
             rb.AddForce(new Vector3(0, 1, 0) * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+            IsGrounded = false;
             canJump = false;
             Invoke("reenableJump", 1);
         }

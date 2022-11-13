@@ -18,15 +18,6 @@ public class CutScene0 : MonoBehaviour
 
     }
 
-    IEnumerator tryMe()
-    {
-        Debug.Log("YESSS I WORKSKSKDF:DSLKFLDSK:LDSFK:LDSK:LDsf:Ldsk:LFK");
-        //VFXSingleton.instance.fadeToAlpha();
-
-        yield return new WaitForSeconds(1f);
-        cm.StartDialog();
-    }
-
     IEnumerator panToMilk()
     {
         vcam.LookAt = milk_trans;

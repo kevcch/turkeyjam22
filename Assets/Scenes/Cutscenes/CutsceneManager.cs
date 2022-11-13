@@ -10,6 +10,11 @@ public class CutsceneManager : MonoBehaviour
     public CutsceneEvent[] sequence;
     public GameObject blackScreen;
 
+
+    public void Update()
+    {
+        
+    }
     public void StartDialog()
     {
         sequence[currentIndex].dialog.GetComponent<Dialogue>().StartDialogue(gameObject);

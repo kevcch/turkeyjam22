@@ -48,8 +48,8 @@ MonoBehaviour:
   - name: music
     group: music
     source: {fileID: 0}
-    clip: {fileID: 8300000, guid: b3fe29ff8288848898d7169c5a8400d4, type: 3}
-    volume: 0.46
+    clip: {fileID: 8300000, guid: c84da48c44812427aa49befe7aba56c9, type: 3}
+    volume: 0.266
     pitch: 1
     loop: 1
   - name: bagMvmt1
@@ -77,6 +77,34 @@ MonoBehaviour:
     group: movement
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: c1c56abdbf848451b9216901557abb72, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: playerJump
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 62350053714e64c9b99fc81e277dce3f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: playerLand
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fcf7c687415d646e390fd9667d7647c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: collectiblePickup
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fcf7c687415d646e390fd9667d7647c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: itemPickup
+    group: 
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fcf7c687415d646e390fd9667d7647c5, type: 3}
     volume: 1
     pitch: 1
     loop: 0

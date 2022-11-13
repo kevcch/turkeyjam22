@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18386886, g: 0.22901735, b: 0.30311128, a: 1}
+  m_IndirectSpecularColor: {r: 0.1838691, g: 0.22901773, b: 0.30311173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -262,6 +262,113 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &124203754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8392827303168365426, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_Name
+      value: CM vcam1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365427, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1989880957094229436}
+    - target: {fileID: 8392827303168365427, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 1989880957094229436}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.109965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.89344174
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.23519196
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.37007567
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0974197
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392827303168365428, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+--- !u!114 &124203755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8392827303168365427, guid: 81ca9046f63d9a84bb6db9f3d07d63d3, type: 3}
+  m_PrefabInstance: {fileID: 124203754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &129936009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129936010}
+  m_Layer: 0
+  m_Name: Sink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129936010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129936009}
+  m_LocalRotation: {x: -0.4972455, y: 0.5027395, z: -0.4972455, w: 0.5027395}
+  m_LocalPosition: {x: 0.12, y: 1.11, z: 3.92}
+  m_LocalScale: {x: 0.20000006, y: 0.20000006, z: 0.20000006}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &134770382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5915237445125610347, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
@@ -506,7 +613,7 @@ MonoBehaviour:
   currentIndex: 0
   sequence:
   - dialog: {fileID: 1513107198}
-    specialFunctionCall: 
+    specialFunctionCall: panToSink
   - dialog: {fileID: 1581073513}
     specialFunctionCall: EndScene
   blackScreen: {fileID: 0}
@@ -539,6 +646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34c5a3221f6946dfbbf04b32f19ccf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vcam: {fileID: 124203755}
+  sink_trans: {fileID: 129936010}
 --- !u!1 &473281599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2056901520811228412, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
@@ -1062,6 +1171,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1104,7 +1214,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 1.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1127,14 +1237,48 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.23911765, y: 0.36964378, z: -0.09904577, w: 0.8923991}
-  m_LocalPosition: {x: -7.8, y: 9.62, z: -7.89}
+  m_LocalRotation: {x: 0.23519196, y: 0.37007567, z: -0.0974197, w: 0.89344174}
+  m_LocalPosition: {x: -11.2, y: 9.11, z: -10.109965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &972740280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2561822342246122458, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
@@ -1418,18 +1562,138 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].name
-      value: Flour
+      value: Jam
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].text
-      value: Scene 2-0
+      value: Psst!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: Who's there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[2].name
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[2].text
+      value: You know that being bread isn't all it's ~cut~ out to be, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[3].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[3].text
+      value: What? Why not?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[4].name
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[4].text
+      value: Your buddy Loaf is becoming stale...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[5].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[5].text
+      value: What's stale?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[6].name
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[6].text
+      value: Only the single most decrepit state a baked good could hope to achieve...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[7].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[7].text
+      value: No...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[8].name
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[8].text
+      value: Yes...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[9].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[9].text
+      value: Is there anything that will stop me from becoming stale?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[10].name
+      value: Flour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[10].text
+      value: Is there anything that will stop me from becoming stale?
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[2].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[3].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[4].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[5].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[6].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[7].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[8].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[9].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[10].portrait
       value: 
       objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
     - target: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
@@ -1539,18 +1803,30 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].name
-      value: Flour
+      value: Jam
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].text
-      value: Scene 2-1
+      value: You see that sink over there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].name
+      value: Jam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: "Hydrate well\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
+    - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
+      propertyPath: lines.Array.data[1].portrait
       value: 
       objectReference: {fileID: 21300000, guid: 02753b163b79e424d8b47eea8b9198fb, type: 3}
     - target: {fileID: 8665156419888912740, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
@@ -2163,27 +2439,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.36
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.11
+      value: -0.10996547
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.5027395
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.4972455
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.5027395
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.4972455
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2191,11 +2467,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -89.37
       objectReference: {fileID: 0}
     - target: {fileID: 6593557211008381968, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_Name
@@ -2203,3 +2479,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
+--- !u!4 &1989880957094229436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
+  m_PrefabInstance: {fileID: 1989880957094229435}
+  m_PrefabAsset: {fileID: 0}
