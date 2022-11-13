@@ -23,4 +23,9 @@ public class AudioManager : MonoBehaviour
     {
         Array.Find(sounds, sound => sound.name == name).source.Play();
     }
+
+    public void PlayGroupRandomPitch(string name)
+    {
+
+    }
 }
