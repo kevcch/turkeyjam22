@@ -8,6 +8,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager am;
 
     public Sound[] sounds;
+    private bool cutscene0Change = false;
+    private bool cutscene2Change = false;
+    private bool cutscene4Change = false;
 
     void Awake()
     {
@@ -35,13 +38,39 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("happyMusic");
+        //Play("happyMusic");
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "CutScene2" && !cutscene2Change)
+        {
+            cutscene2Change = true;
+            Stop("happyMusic");
+            Play("sadMusic");
+        }
+        if (SceneManager.GetActiveScene().name == "CutScene4" && !cutscene4Change)
+        {
+            cutscene4Change = true;
+            cutscene2Change = false;
+            cutscene0Change = false;
+            Stop("sadMusic");
+            Play("deathWind");
+
+        }
+        if (SceneManager.GetActiveScene().name == "Cutscene0" && !cutscene0Change)
+        {
+            cutscene0Change = true;
+            Play("happyMusic");
+            Stop("deathWind");
+        }
     }
 
     // Play sound by name
     public void Play(string name)
     {
         Sound s = FindSound(name);
+        Debug.Log("Play: " + name);
         s.source.Play();
     }
 
@@ -49,7 +78,10 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = FindSound(name);
         if (s.source.isPlaying)
+        {
+            Debug.Log("Stop " + name);
             s.source.Stop();
+        }
     }
 
     private Sound FindSound(string name)

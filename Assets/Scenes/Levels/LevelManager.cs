@@ -27,22 +27,7 @@ public class LevelManager : MonoBehaviour
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(nextScene);
-        if (SceneManager.GetActiveScene().name == "Cutscene2")
-        {
-            FindObjectOfType<AudioManager>().Stop("happyMusic");
-            FindObjectOfType<AudioManager>().Play("sadMusic");
-        }
-        else if (SceneManager.GetActiveScene().name == "Cutscene4")
-        {
-            FindObjectOfType<AudioManager>().Stop("sadMusic");
-            FindObjectOfType<AudioManager>().Play("deathWind");
-
-        }
-        else if (SceneManager.GetActiveScene().name == "Cutscene0")
-        {
-            FindObjectOfType<AudioManager>().Stop("deathWind");
-            FindObjectOfType<AudioManager>().Play("happyMusic");
-        }
+        
     }
 
     public void StartRestartCoroutine() {
