@@ -1,6 +1,7 @@
 using System;
 using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -34,29 +35,39 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("music");
+        Play("happyMusic");
     }
 
     // Play sound by name
     public void Play(string name)
     {
-        var s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.Log("Sound " + name + " not found");
-        }
+        Sound s = FindSound(name);
         s.source.Play();
     }
 
-    // Play sound by name with random pitch
-    public void PlayPitchRandom(string name,
-        float minPitch = 0.7f, float maxPitch = 1.3f)
+    public void Stop(string name)
+    {
+        Sound s = FindSound(name);
+        if (s.source.isPlaying)
+            s.source.Stop();
+    }
+
+    private Sound FindSound(string name)
     {
         var s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
         {
             Debug.Log("Sound " + name + " not found");
         }
+        return s;
+    }
+
+
+    // Play sound by name with random pitch
+    public void PlayPitchRandom(string name,
+        float minPitch = 0.7f, float maxPitch = 1.3f)
+    {
+        Sound s = FindSound(name);
         s.source.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
         s.source.Play();
     }
@@ -85,4 +96,5 @@ public class AudioManager : MonoBehaviour
         s.source.volume = volume;
         s.source.Play();
     }
+
 }
