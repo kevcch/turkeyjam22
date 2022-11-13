@@ -45,9 +45,6 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("Sound " + name + " not found");
         }
-
-
-        Debug.Log("PlayOneShot: " + s.source.clip);
         s.source.Play();
     }
 
@@ -76,5 +73,16 @@ public class AudioManager : MonoBehaviour
         int index = UnityEngine.Random.Range(0, g.Length);
         g[index].source.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
         g[index].source.Play();
+    }
+
+    public void PlayWithNewVolume(string name, float volume = 1f)
+    {
+        var s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.Log("Sound " + name + " not found");
+        }
+        s.source.volume = volume;
+        s.source.Play();
     }
 }

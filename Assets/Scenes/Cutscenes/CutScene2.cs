@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class CutScene2 : MonoBehaviour
 {
     CutsceneManager cm;
+    public Cinemachine.CinemachineVirtualCamera vcam;
+    public Transform sink_trans;
 
     private void Start()
     {
@@ -15,13 +17,12 @@ public class CutScene2 : MonoBehaviour
 
     }
 
-    IEnumerator tryMe()
+    IEnumerator panToSink()
     {
-        Debug.Log("YESSS I WORKSKSKDF:DSLKFLDSK:LDSFK:LDSK:LDsf:Ldsk:LFK");
-        //VFXSingleton.instance.fadeToAlpha();
-
-        yield return new WaitForSeconds(1f);
+        vcam.LookAt = sink_trans;
+        yield return new WaitForSeconds(1.5f);
         cm.StartDialog();
+
     }
 
     IEnumerator EndScene()
