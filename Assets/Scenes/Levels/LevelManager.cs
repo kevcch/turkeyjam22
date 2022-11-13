@@ -13,19 +13,28 @@ public class LevelManager : MonoBehaviour
         instance = this;
     }
 
-    /*public IEnumerator Start()
+    
+    public IEnumerator Start()
     {
         VFXSingleton.instance.fadeToAlpha();
         yield return new WaitForSeconds(1f);
-        StartCoroutine("EndScene");
+        //StartCoroutine("EndScene");
 
-    }*/
+    }
+
     public IEnumerator EndScene()
     {
         //Debug.Log("asdfasdf");
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(nextScene);
+    }
+
+    public IEnumerator RestartScene()
+    {
+        VFXSingleton.instance.fadeToBlack();
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }
