@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     //Array of chars for text
     private char[] sentenceArray;
 
-    public GameObject nameBox;
+    //public GameObject nameBox;
     public Text nameText;
 
     public Image portrait;
@@ -63,7 +63,8 @@ public class Dialogue : MonoBehaviour
 
         dialogueActive = true;
         dialogueBox.SetActive(true);
-        nameBox.SetActive(true);
+        //nameBox.SetActive(true);
+        nameText.gameObject.SetActive(true);
         portrait.gameObject.SetActive(true);
         StartCoroutine(NextSentence());
     }
@@ -71,7 +72,8 @@ public class Dialogue : MonoBehaviour
     void EndDialogue()
     {
         dialogueBox.SetActive(false);
-        nameBox.SetActive(false);
+        //nameBox.SetActive(false);
+        nameText.gameObject.SetActive(false);
         portrait.gameObject.SetActive(false);
         dialogueActive = false;
         lineCounter = 0;
