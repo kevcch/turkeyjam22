@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutScene0 : MonoBehaviour
+public class CutScenee0 : MonoBehaviour
 {
     CutsceneManager cm;
     public Cinemachine.CinemachineVirtualCamera vcam;
