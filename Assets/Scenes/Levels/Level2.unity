@@ -4217,6 +4217,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlourBar
       objectReference: {fileID: 0}
+    - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3985617351875059026, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+    - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartRestartCoroutine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
 --- !u!64 &1415483083

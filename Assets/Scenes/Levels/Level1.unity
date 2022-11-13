@@ -257,6 +257,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5881658414517802705, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
   m_PrefabInstance: {fileID: 1989880957094229435}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &73436595 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3985617351875059026, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+  m_PrefabInstance: {fileID: 1917258190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a05f65f00161c747bf1cc85dd08b230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &134770386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2537,6 +2548,14 @@ PrefabInstance:
     - target: {fileID: 2800331518771788123, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_Name
       value: FlourBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 73436595}
+    - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartRestartCoroutine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
