@@ -26,6 +26,7 @@ public class Dialogue : MonoBehaviour
     //Record which line you are on
     public int lineCounter;
 
+    public float scrollInterval = 0.02f;
     //detect when you are on the last line so you can end dialogue
     public bool lastLine;
 
@@ -98,7 +99,7 @@ public class Dialogue : MonoBehaviour
         {
             dialogueText.text += sentenceArray[i];
             //FindObjectOfType<AudioManager>().Play("TextScrollBlip");
-            yield return new WaitForSeconds(.04f);
+            yield return new WaitForSeconds(scrollInterval);
             //FindObjectOfType<AudioManager>().GetComponent<AudioManager>().Stop("TextScrollBlip");
         }
 
