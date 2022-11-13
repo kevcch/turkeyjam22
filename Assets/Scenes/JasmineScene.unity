@@ -2304,5 +2304,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlourBag
       objectReference: {fileID: 0}
+    - target: {fileID: 8638453932314809190, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
+      propertyPath: jumpForce
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638453932314809190, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
+      propertyPath: moveForce
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
