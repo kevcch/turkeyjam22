@@ -33,6 +33,14 @@ public class GrabObjects : MonoBehaviour
                 hint.SetActive(false);
                 grabbed = true;
                 offset = transform.position - collision.transform.position;
+                if (gameObject.tag == "Collectible")
+                {
+                    FindObjectOfType<AudioManager>().Play("collectiblePickup");
+                }
+                else
+                {
+                    FindObjectOfType<AudioManager>().Play("propPickup");
+                }
                 StartCoroutine(GrabDelay());
             }
         }
