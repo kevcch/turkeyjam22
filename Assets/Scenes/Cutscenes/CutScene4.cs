@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class CutScene4 : MonoBehaviour
 {
     CutsceneManager cm;
+    public Cinemachine.CinemachineVirtualCamera vcam;
+    public GameObject alive_loaf;
+    public GameObject directional_light;
+    public GameObject dead_loaf;
 
     private void Start()
     {
@@ -15,19 +19,24 @@ public class CutScene4 : MonoBehaviour
 
     }
 
-    IEnumerator tryMe()
+    IEnumerator deadLoafCutscene()
     {
-        Debug.Log("YESSS I WORKSKSKDF:DSLKFLDSK:LDSFK:LDSK:LDsf:Ldsk:LFK");
-        //VFXSingleton.instance.fadeToAlpha();
+        yield return new WaitForSeconds(0.1f);
+        //AUDIO THUD
 
-        yield return new WaitForSeconds(1f);
+        directional_light.SetActive(false);
+        alive_loaf.SetActive(false);
+        dead_loaf.SetActive(true);
+        vcam.LookAt = dead_loaf.transform;
+        yield return new WaitForSeconds(1.5f);
         cm.StartDialog();
+
     }
 
     IEnumerator EndScene()
     {
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level4");
+        SceneManager.LoadScene("Level2");
     }
 }
