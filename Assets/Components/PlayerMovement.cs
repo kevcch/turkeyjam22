@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         RaycastHit hit;
         float distance = 0.3f;
