@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         RaycastHit hit;
-        float distance = 0.3f;
+        float distance = 0.15f;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, distance))
         {
             Debug.DrawRay(transform.position, Vector3.down, Color.green, 2);
@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             //}
         }
+        Debug.Log(isGrounded);
         if (Input.GetKeyDown(KeyCode.T)) {
             fourty_five_mode = !fourty_five_mode;
         }
