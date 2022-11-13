@@ -7,6 +7,11 @@ public class FlourBar : MonoBehaviour
 {
     public RectTransform rt;
     // Update is called once per frame
+
+    void Awake() {
+        FlourPointTracker.numFlourPoints = 100;
+    }
+    
     void Update()
     {
         rt.sizeDelta = new Vector2(5f * FlourPointTracker.numFlourPoints, 20f);
