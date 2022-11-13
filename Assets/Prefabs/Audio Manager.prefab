@@ -97,8 +97,8 @@ MonoBehaviour:
   - name: collectiblePickup
     group: 
     source: {fileID: 0}
-    clip: {fileID: 8300000, guid: fcf7c687415d646e390fd9667d7647c5, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: e31389f3e311c489995b6ad7e4b5497a, type: 3}
+    volume: 0.864
     pitch: 1
     loop: 0
   - name: itemPickup
