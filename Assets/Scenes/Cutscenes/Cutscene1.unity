@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 206390543698426970, guid: bf8f398eefcf86b45b66e0d785fa8577, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 206390543767152005, guid: bf8f398eefcf86b45b66e0d785fa8577, type: 3}
       propertyPath: m_Name
       value: VFXScreen
@@ -631,7 +627,7 @@ MonoBehaviour:
   - dialog: {fileID: 8665156421068583541}
     specialFunctionCall: tryMe
   - dialog: {fileID: 8665156420762877134}
-    specialFunctionCall: 
+    specialFunctionCall: asdfa
   blackScreen: {fileID: 0}
 --- !u!1 &8665156419554210952
 GameObject:
@@ -1221,11 +1217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: 'ahhaa
-
-'
+  - text: sdf
     portrait: {fileID: 21300000, guid: b0376c3d1b1f5c74096f93e430e097e2, type: 3}
-    name: flour
+    name: sdfsdf
   dialogueBox: {fileID: 8665156419930934245}
   dialogueText: {fileID: 8665156420491211320}
   nameBox: {fileID: 8665156419554210952}
@@ -1439,11 +1433,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - text: 'hello
-
-'
+  - text: witam
     portrait: {fileID: 21300000, guid: 9c0d6ec706e01ce448aea81584af092b, type: 3}
-    name: load
+    name: patryk
   dialogueBox: {fileID: 8665156420298409310}
   dialogueText: {fileID: 8665156419720985731}
   nameBox: {fileID: 8665156420120984115}

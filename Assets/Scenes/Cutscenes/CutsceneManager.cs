@@ -12,7 +12,7 @@ public class CutsceneManager : MonoBehaviour
 
     public void StartDialog()
     {
-        sequence[0].dialog.GetComponent<Dialogue>().StartDialogue(gameObject);
+        sequence[currentIndex].dialog.GetComponent<Dialogue>().StartDialogue(gameObject);
     }
 
     public void NextDialog()
@@ -37,6 +37,7 @@ public class CutsceneManager : MonoBehaviour
         else
         {
             //go to next scene
+            gameObject.SendMessage("EndScene");
         }
     }
 
