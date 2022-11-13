@@ -18,6 +18,15 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
 
+    public bool EnteredTrigger;
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.tag);
+        if (other.tag == "FlourPointRestore")
+            EnteredTrigger = true;
+    }
+
     private void Start()
     {
         isColliding = false;
@@ -87,6 +96,5 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.magnitude * FlourPointTracker.point_multiplier >= 0.01) {
             FlourPointTracker.numFlourPoints -= rb.velocity.magnitude * FlourPointTracker.point_multiplier;
         }
-        Debug.Log(FlourPointTracker.numFlourPoints);
     }
 }
