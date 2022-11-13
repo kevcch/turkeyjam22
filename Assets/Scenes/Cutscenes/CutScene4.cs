@@ -45,6 +45,6 @@ public class CutScene4 : MonoBehaviour
     {
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level4");
     }
 }
