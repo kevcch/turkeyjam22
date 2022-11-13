@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class CutScene0 : MonoBehaviour
 {
     CutsceneManager cm;
+    public Cinemachine.CinemachineVirtualCamera vcam;
+    public Transform milk_trans;
+    public Transform mixing_bowl_trans;
 
     private void Start()
     {
@@ -23,6 +26,23 @@ public class CutScene0 : MonoBehaviour
         yield return new WaitForSeconds(1f);
         cm.StartDialog();
     }
+
+    IEnumerator panToMilk()
+    {
+        vcam.LookAt = milk_trans;
+        yield return new WaitForSeconds(1.5f);
+        cm.StartDialog();
+
+    }
+
+    IEnumerator panToMixingBowl()
+    {
+        Debug.Log("PAN TO MIX");
+        vcam.LookAt = mixing_bowl_trans;
+        yield return new WaitForSeconds(1.5f);
+        StartCoroutine("EndScene");
+    }
+
 
     IEnumerator EndScene()
     {
