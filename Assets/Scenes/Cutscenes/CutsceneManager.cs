@@ -36,8 +36,16 @@ public class CutsceneManager : MonoBehaviour
         }
         else
         {
-            //go to next scene
-            gameObject.SendMessage("EndScene");
+            if (!String.IsNullOrEmpty(sequence[currentIndex].specialFunctionCall))
+            {
+                string callback = sequence[currentIndex].specialFunctionCall;
+                Debug.Log("ADSFADSF");
+                currentIndex++;
+                gameObject.SendMessage(callback);
+            }else{
+                //go to next scene
+                gameObject.SendMessage("EndScene");
+            }
         }
     }
 
