@@ -17,9 +17,14 @@ public class GrabbedManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E)) {
+        if (Input.GetKey(KeyCode.E) && grabbed) {
             grabbed = false;
-            grabbedObject.grabbed = false;
+            StartCoroutine(UngrabDelay());
         }
+    }
+
+    IEnumerator UngrabDelay() {
+        yield return new WaitForSeconds(0.5f);
+        grabbedObject.grabbed = false;
     }
 }
