@@ -386,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376682425}
   - component: {fileID: 376682424}
-  - component: {fileID: 376682423}
+  - component: {fileID: 376682426}
   - component: {fileID: 376682422}
   m_Layer: 0
   m_Name: Cutscene Manager
@@ -491,18 +491,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &376682423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376682421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7574ea7a7279ad84f88214f5e48a3d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &376682424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,6 +527,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376682426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376682421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364e5ca41dcec425880aef650bc57f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &473281599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2056901520811228412, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
@@ -1426,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].text
-      value: Scene 0-0
+      value: Scene 3-0
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].portrait
@@ -1547,7 +1547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].text
-      value: Scene 0-1
+      value: Scene 3-1
       objectReference: {fileID: 0}
     - target: {fileID: 8665156419888912739, guid: e71484ca6c16ceb409c2ea73af356717, type: 3}
       propertyPath: lines.Array.data[0].portrait

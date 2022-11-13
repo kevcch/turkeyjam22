@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutScene0 : MonoBehaviour
+public class CutScene1 : MonoBehaviour
 {
     CutsceneManager cm;
 
@@ -28,6 +28,6 @@ public class CutScene0 : MonoBehaviour
     {
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level0");
+        SceneManager.LoadScene("Level1");
     }
 }
