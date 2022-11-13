@@ -45,10 +45,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - group: 
-    name: music
+  - name: music
+    group: music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 2e1cd5b4204ac453cb251017150a07be, type: 3}
-    volume: 1
+    volume: 0.46
     pitch: 1
     loop: 1
+  - name: bagMvmt1
+    group: movement
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9ddbbcfa7d9b54b9f8458074433f27a4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: bagMvmt2
+    group: movement
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: e650b89e6c55f47f996e9e15ebe59ded, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: bagMvmt3
+    group: movement
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: a3d64d84ebc744dc9a7ecf0823e9dfc4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: bagMvmt4
+    group: movement
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: c1c56abdbf848451b9216901557abb72, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0

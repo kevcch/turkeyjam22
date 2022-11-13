@@ -2,8 +2,8 @@ using UnityEngine;
 [System.Serializable]
 public class Sound
 {
-    public string group;
     public string name;
+    public string group;
     [HideInInspector] public AudioSource source;
     public AudioClip clip;
     [Range(0, 1f)]
@@ -12,7 +12,8 @@ public class Sound
     public float pitch = 1f;
     public bool loop = false;
 
-    public Sound(string group, string name, AudioClip clip, float volume, float pitch, bool loop)
+    public Sound(string group, string name, AudioClip clip, float volume,
+        float pitch, bool loop)
     {
         this.group = group;
         this.name = name;

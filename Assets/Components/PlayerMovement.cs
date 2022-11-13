@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,7 +10,20 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 30.0f;
     public float moveForce = 3.0f;
     public bool isColliding;
-    public bool isGrounded;
+    public bool IsGrounded
+    {
+        get { return isGrounded; }
+        set
+        {
+            if (isGrounded == value)
+                return;
+            if (OnIsGroundedChange != null)
+                OnIsGroundedChange(isGrounded);
+        }
+    }
+    private bool isGrounded;
+    public delegate void OnIsGroundedChangeDelegate(bool isGrounded);
+    public event OnIsGroundedChangeDelegate OnIsGroundedChange;
     private bool canJump = true;
     public bool fourty_five_mode = false;
 
@@ -19,6 +33,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     public bool EnteredTrigger;
+    private float stepTimer = 0;
+    private float baseStepPeriod = 3f;
+    private float stepPeriod = 1f;
+    private float minStepRate = 0.3f;
+    private float maxStepRate = 3f;
+    private float minMovementSoundSpeed = .5f;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -32,6 +52,27 @@ public class PlayerMovement : MonoBehaviour
         isColliding = false;
         isGrounded = false;
         rb = GetComponent<Rigidbody>();
+        OnIsGroundedChange += OnIsGroundedChangeHandler;
+    }
+
+    private void OnIsGroundedChangeHandler(bool isGrounded)
+    {
+        if (isGrounded)
+        {
+            FindObjectOfType<AudioManager>().PlayPitchRandom("playerLand");
+        }
+    }
+
+    void Update()
+    {
+        stepTimer += Time.deltaTime;
+        stepPeriod = Mathf.Clamp(baseStepPeriod - rb.velocity.magnitude, minStepRate, maxStepRate);
+        if (stepTimer > stepPeriod && isGrounded && rb.velocity.magnitude > minMovementSoundSpeed)
+        {
+            FindObjectOfType<AudioManager>().PlayGroupRandomPitch("movement");
+            stepTimer = 0f;
+        }
+
     }
 
     private void reenableJump()
@@ -56,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             //}
         }
-        Debug.Log(isGrounded);
+        //Debug.Log(isGrounded);
         if (Input.GetKeyDown(KeyCode.T)) {
             fourty_five_mode = !fourty_five_mode;
         }
