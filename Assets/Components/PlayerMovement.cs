@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
+        //Debug.Log(other.tag);
         if (other.tag == "FlourPointRestore")
             EnteredTrigger = true;
     }
