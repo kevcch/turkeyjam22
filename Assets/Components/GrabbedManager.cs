@@ -6,6 +6,7 @@ public class GrabbedManager : MonoBehaviour
 {
 
     public bool grabbed;
+    public GrabObjects grabbedObject;
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class GrabbedManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E)) {
             grabbed = false;
+            grabbedObject.grabbed = false;
         }
     }
 }
