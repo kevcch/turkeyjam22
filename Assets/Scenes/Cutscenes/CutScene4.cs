@@ -27,6 +27,7 @@ public class CutScene4 : MonoBehaviour
         vcam.LookAt = dead_loaf.transform;
 
         //AUDIO THUD
+        FindObjectOfType<AudioManager>().Play("death");
         //FindObjectOfType<AudioManager>().Play("THUD");
         yield return new WaitForSeconds(0.5f);
         //AUDIO SCREAM
