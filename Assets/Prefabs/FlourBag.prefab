@@ -4914,8 +4914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c963793758a4868aa9c7dbd21627a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 2
-  moveForce: 0.1
+  jumpForce: 30
+  moveForce: 3
   isColliding: 0
   isGrounded: 0
   maxSpeedHorizontal: 2
