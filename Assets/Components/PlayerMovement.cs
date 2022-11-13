@@ -96,5 +96,9 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.magnitude * FlourPointTracker.point_multiplier >= 0.01) {
             FlourPointTracker.numFlourPoints -= rb.velocity.magnitude * FlourPointTracker.point_multiplier;
         }
+<<<<<<< Updated upstream
+=======
+        //Debug.Log(FlourPointTracker.numFlourPoints);
+>>>>>>> Stashed changes
     }
 }

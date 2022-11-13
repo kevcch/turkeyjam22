@@ -25,7 +25,6 @@ public class GrabObjects : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision) {
-        Debug.Log(this.name);
         if(collision.gameObject.tag == "Player" && !grabManager.grabbed && !grabbed) {
             grabbed = true;
             grabManager.grabbed = true;

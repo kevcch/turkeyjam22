@@ -9,16 +9,20 @@ public class LevelManager : MonoBehaviour
 
     public string nextScene;
 
-    public IEnumerator Start()
+    void Awake() {
+        instance = this;
+    }
+
+    /*public IEnumerator Start()
     {
         VFXSingleton.instance.fadeToAlpha();
         yield return new WaitForSeconds(1f);
         StartCoroutine("EndScene");
 
-    }
+    }*/
     public IEnumerator EndScene()
     {
-        Debug.Log("asdfasdf");
+        //Debug.Log("asdfasdf");
         VFXSingleton.instance.fadeToBlack();
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(nextScene);
