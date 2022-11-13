@@ -8,6 +8,7 @@ public class GrabObjects : MonoBehaviour
     private Transform player;
     private Vector3 offset;
     private GrabbedManager grabManager;
+    public bool grabbed;
 
     void Start()
     {
@@ -18,14 +19,17 @@ public class GrabObjects : MonoBehaviour
     }
 
     void Update() {
-        if(grabManager.grabbed) {
+        if(grabManager.grabbed && grabbed) {
             transform.position = player.position + offset;
         }
     }
 
     void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "Player" && !grabManager.grabbed) {
+        Debug.Log(this.name);
+        if(collision.gameObject.tag == "Player" && !grabManager.grabbed && !grabbed) {
+            grabbed = true;
             grabManager.grabbed = true;
+            grabManager.grabbedObject = this;
             offset = transform.position - collision.transform.position;
         }
     }
