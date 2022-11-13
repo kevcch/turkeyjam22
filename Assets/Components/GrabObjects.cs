@@ -9,6 +9,7 @@ public class GrabObjects : MonoBehaviour
     private Vector3 offset;
     private GrabbedManager grabManager;
     public bool grabbed;
+    public GameObject hint;
 
     void Start()
     {
@@ -26,12 +27,19 @@ public class GrabObjects : MonoBehaviour
 
     void OnCollisionStay(Collision collision) {
         if(collision.gameObject.tag == "Player" && !grabManager.grabbed && !grabbed) {
+            hint.SetActive(true);
+            hint.GetComponent<TextHintManager>().grabbableObject = transform;
             if (Input.GetKey(KeyCode.E)) {
+                hint.SetActive(false);
                 grabbed = true;
                 offset = transform.position - collision.transform.position;
                 StartCoroutine(GrabDelay());
             }
         }
+    }
+
+    void OnCollisionExit() {
+        hint.SetActive(false);
     }
 
     IEnumerator GrabDelay() {
