@@ -19,26 +19,33 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
-
-        if (GameObject.Find("Audio Manager") != null)
+        AudioManager[] instances = GameObject.FindObjectsOfType<AudioManager>();
+        if (instances.Length > 1)
             Destroy(this.gameObject);
 
         DontDestroyOnLoad(this.gameObject);
     }
 
+    private void Start()
+    {
+        Play("music");
+    }
+
     // Play sound by name
     public void Play(string name)
     {
-        Array.Find(sounds, sound => sound.name == name).source.Play();
+        var s = Array.Find(sounds, sound => sound.name == name);
+        Debug.Log("PlayOneShot: " + s.source.clip);
+        s.source.Play();
     }
 
     // Play sound by name with random pitch
     public void PlayPitchRandom(string name,
         float minPitch = 0.7f, float maxPitch = 1.3f)
     {
-        AudioSource s = Array.Find(sounds, sound => sound.name == name).source;
-        s.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
-        s.Play();
+        var s = Array.Find(sounds, sound => sound.name == name);
+        s.source.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
+        s.source.Play();
     }
 
     // Play sounds from group randomly with random pitch

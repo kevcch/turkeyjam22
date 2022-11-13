@@ -3,8 +3,8 @@ using UnityEngine;
 public class Sound
 {
     public string group;
-    [HideInInspector] public string name;
-    public AudioSource source;
+    public string name;
+    [HideInInspector] public AudioSource source;
     public AudioClip clip;
     [Range(0, 1f)]
     public float volume = 1f;
@@ -15,7 +15,7 @@ public class Sound
     public Sound(string group, string name, AudioClip clip, float volume, float pitch, bool loop)
     {
         this.group = group;
-        this.name = clip.ToString();
+        this.name = name;
         this.clip = clip;
         this.volume = volume;
         this.pitch = pitch;
