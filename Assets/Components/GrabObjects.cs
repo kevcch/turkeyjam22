@@ -23,11 +23,11 @@ public class GrabObjects : MonoBehaviour
         if(grabManager.grabbed && grabbed) {
             transform.position = player.position + offset;
         }
-        if(grabbed) {
+        /*if(grabbed) {
             gameObject.GetComponent<Collider>().enabled = false;
         } else {
             gameObject.GetComponent<Collider>().enabled = true;
-        }
+        }*/
     }
 
     void OnCollisionStay(Collision collision) {
