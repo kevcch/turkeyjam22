@@ -1343,7 +1343,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.15622985, y: 0.37717226, z: -0.06471253, w: 0.9105744}
+  m_LocalRotation: {x: 0.15622987, y: 0.37717226, z: -0.06471254, w: 0.9105744}
   m_LocalPosition: {x: -15.12, y: 7.51, z: -11.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2428,7 +2428,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368297053}
-  m_LocalRotation: {x: 0.15622985, y: 0.37717226, z: -0.06471253, w: 0.9105744}
+  m_LocalRotation: {x: 0.15622987, y: 0.37717226, z: -0.06471254, w: 0.9105744}
   m_LocalPosition: {x: -15.12, y: 7.51, z: -11.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3924,7 +3924,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 544265100, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: m_Range
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1989880957625972624, guid: 9b692be70c6ed47b5bfaba68843baad9, type: 3}
       propertyPath: CollisionModule.m_Planes.Array.data[0]
