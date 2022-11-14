@@ -1694,6 +1694,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3202753047922610279, guid: 8fdf09b8431c040e8bbd42cd7702eefc, type: 3}
+--- !u!114 &681292865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3985617351875059026, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+  m_PrefabInstance: {fileID: 1917258190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a05f65f00161c747bf1cc85dd08b230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,7 +4231,7 @@ PrefabInstance:
     - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3985617351875059026, guid: fb3ed7dad2abb294d8c88ac3f05b6007, type: 3}
+      objectReference: {fileID: 681292865}
     - target: {fileID: 8534882043709152527, guid: 9141864d018d64d8f9e75e3ac6a39ff7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartRestartCoroutine
